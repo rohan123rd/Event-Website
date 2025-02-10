@@ -1,0 +1,122 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff4081 !important;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('/assets/hero-bg.jpg') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .hero .btn-primary {
+    background: #ff4081;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+  }
+  
+  .hero .btn-primary:hover {
+    background: #e60073;
+  }
+  
+  /* Gallery */
+  .gallery img {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Blog */
+  .blog-card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Contact */
+  .contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border-radius: 5px;
+  }
+  
+  .contact-form .btn-primary {
+    background: #007bff;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form .btn-primary:hover {
+    background: #0056b3;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
