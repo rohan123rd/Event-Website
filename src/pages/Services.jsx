@@ -1,30 +1,34 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
-
-const services = [
-  {
-    title: "Weddings",
-    img: "src/assets/wedding1.jpeg",
-  },
-  { title: "Birthdays", img: "src/assets/birthday3.jpeg" },
-  {
-    title: "Corporate Events",
-    img: "src/assets/corporate1.jpeg",
-  },
-  { title: "Baby Shower", img: "src/assets/baby-shower2.jpeg" },
-];
+import { Link } from "react-router-dom";
+import { services } from "../data/services";
+import "./services.css";
 
 const Services = () => {
   return (
     <Container className="py-5">
-      <h2 className="text-center">Our Services</h2>
-      <Row className="mt-4">
-        {services.map((service, index) => (
-          <Col md={4} key={index} className="mb-4">
-            <Card>
-              <Card.Img variant="top" src={service.img} />
-              <Card.Body>
-                <Card.Title>{service.title}</Card.Title>
-              </Card.Body>
+      <h2 className="text-center mb-4">Our Services</h2>
+      <Row>
+        {services.map((service) => (
+          <Col md={3} sm={6} key={service.id} className="mb-4">
+            <Card className="h-100 d-flex flex-column service-card">
+              <Link
+                to={`/services/${service.id}`}
+                className="text-decoration-none text-dark"
+              >
+                <div className="image-container">
+                  <Card.Img
+                    variant="top"
+                    src={service.image}
+                    className="service-image"
+                  />
+                </div>
+                <Card.Body className="d-flex flex-column">
+                  <Card.Title>{service.title}</Card.Title>
+                  <Card.Text className="flex-grow-1">
+                    {service.description}
+                  </Card.Text>
+                </Card.Body>
+              </Link>
             </Card>
           </Col>
         ))}

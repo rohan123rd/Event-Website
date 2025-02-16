@@ -52,7 +52,7 @@ import Gallery from "../components/Gallery";
 const GalleryPage = () => {
   return (
     <div className="gallery-page">
-      <h1 className="page-title">Event Gallery</h1>
+      {/* <h1 className="page-title">Event Gallery</h1> */}
       <Gallery />
     </div>
   );
