@@ -68,7 +68,7 @@ const ServiceDetails = () => {
           <Button
             variant="outline-danger"
             className="contact-btn"
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate("/bookingform")}
           >
             Book Now
           </Button>

@@ -37,6 +37,9 @@ const Header = () => {
             <Nav.Link as={Link} to="/contact">
               Contact
             </Nav.Link>
+            <Nav.Link as={Link} to="/bookingform">
+              Book Event
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

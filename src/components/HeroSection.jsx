@@ -2,11 +2,12 @@ import React, { useRef, useEffect, useState } from "react";
 import { Canvas, useLoader, useFrame } from "@react-three/fiber";
 import { TextureLoader } from "three";
 import "./HeroSection.css";
+import { Navigate } from "react-router-dom";
 
 const Logo = ({ logoRef, size, isMobile }) => {
   const logoTexture = useLoader(
     TextureLoader,
-    "src/assets/01 white watermark.png"
+    "src/assets/02 black watermark.png"
   );
 
   useFrame(() => {
@@ -53,13 +54,12 @@ const HeroSection = () => {
       logoRef.current.rotation.x = mouseY * 0.1;
     }
   };
-
   return (
     <div className="hero" onMouseMove={handleMouseMove}>
       <Canvas
         className="canvas"
         camera={{ position: [0, 0, 2] }}
-        style={{ height: "300px" }}
+        style={{ height: "200px" }}
       >
         {/* Lights */}
         <ambientLight intensity={0.6} />

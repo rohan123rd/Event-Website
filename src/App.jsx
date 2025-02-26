@@ -8,6 +8,7 @@ import Gallery from "./pages/Gallery";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import ServiceDetails from "./pages/ServiceDetails";
+import BookingForm from "./pages/BookingForm";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/bookingform" element={<BookingForm />} />
       </Routes>
     </Router>
   );

@@ -40,7 +40,7 @@ const Blog = () => {
         })}
       </Row>
     </Container>
-  );
+  );Reactcmd
 };
 
 export default Blog;
