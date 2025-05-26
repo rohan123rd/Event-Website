@@ -1,17 +1,23 @@
-import { Container, Row, Col, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
 import { services } from "../data/services";
-import "./services.css";
-import "../context/HoverUnderline.css";
 
-const Services = () => {
+const HomeServices = () => {
+  const navigate = useNavigate();
+
+  // ✅ Get 4 random services
+  const randomServices = [...services]
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 4);
+
   return (
     <Container className="py-5">
       <h2 className="text-center mb-4 hover-underline-animation center">
         Our Services
       </h2>
       <Row className="service-container">
-        {services.map((service) => (
+        {randomServices.map((service) => (
           <Col md={3} sm={6} key={service.id} className="mb-4">
             <Card className="h-100 d-flex flex-column service-card">
               <Link
@@ -35,8 +41,14 @@ const Services = () => {
           </Col>
         ))}
       </Row>
+      {/* View More Button */}
+      <div className="text-center mt-4">
+        <Button variant="primary" onClick={() => navigate("/services")}>
+          View More
+        </Button>
+      </div>
     </Container>
   );
 };
 
-export default Services;
+export default HomeServices;

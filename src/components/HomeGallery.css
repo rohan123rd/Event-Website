@@ -1,0 +1,11 @@
+.home-gallery-carousel {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .carousel-image {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  

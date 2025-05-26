@@ -1,5 +1,7 @@
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useState } from "react";
+import "../context/HoverUnderline.css";
+import "./BookingForm.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,14 +21,21 @@ const Contact = () => {
   };
 
   return (
-    <Container className="py-5">
-      <h2 className="text-center mb-4">Contact Us</h2>
+    <Container className="py-5 booking-form">
+      <h2 className="text-center mb-4 hover-underline-animation center">
+        Contact Us
+      </h2>
       <Row>
         <Col md={6}>
           <h5>Get in Touch</h5>
-          <p>Email: nagherarohan@gmail.com</p>
-          <p>Phone: +91 93279 52308</p>
-          <p>Address: Harnasa, Gir Somnath, Gujarat, India - 362268</p>
+          <p>Email: vanshpatel9793@gmail.com</p>
+          <p>Phone: +91 95108 49304</p>
+          <p> +91 63540 23574</p>
+          <p> +91 88663 40208</p>
+          <p>
+            Address: 46,Harikesh Society,Jahangirpura,Surat,Gujarat,India -
+            395005
+          </p>
         </Col>
         <Col md={6}>
           <Form onSubmit={handleSubmit}>
@@ -38,6 +47,8 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
+                placeholder="Your Name"
+                style={{ paddingLeft: "15px" }}
               />
             </Form.Group>
 
@@ -49,6 +60,8 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
+                placeholder="Your Mail"
+                style={{ paddingLeft: "15px" }}
               />
             </Form.Group>
 
@@ -61,6 +74,8 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
+                placeholder="Write your message"
+                style={{ paddingLeft: "15px", paddingTop: "10px" }}
               />
             </Form.Group>
 

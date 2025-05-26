@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { Canvas, useLoader, useFrame } from "@react-three/fiber";
 import { TextureLoader } from "three";
 import "./HeroSection.css";
-import { Navigate } from "react-router-dom";
+import TextPressure from "../context/TextPressure";
 
 const Logo = ({ logoRef, size, isMobile }) => {
   const logoTexture = useLoader(
@@ -56,18 +56,54 @@ const HeroSection = () => {
   };
   return (
     <div className="hero" onMouseMove={handleMouseMove}>
-      <Canvas
+      <video autoPlay loop muted playsInline className="hero-video">
+        <source
+          src="https://videos.pexels.com/video-files/4272430/4272430-uhd_2732_1440_25fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <img
+        src="https://images.unsplash.com/photo-1612538946167-bc98c01732be?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        className="hero-image-tablet"
+        alt=""
+      />
+      <img
+        src="https://images.unsplash.com/photo-1550512108-2c2184f5dac4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        className="hero-image-mobile"
+        alt=""
+      />
+
+      {/* <Canvas
         className="canvas"
         camera={{ position: [0, 0, 2] }}
         style={{ height: "200px" }}
       >
-        {/* Lights */}
         <ambientLight intensity={0.6} />
         <pointLight position={[5, 5, 5]} intensity={1.5} />
 
-        {/* 3D Logo (spinning on mobile, responsive on desktop) */}
         <Logo logoRef={logoRef} size={logoSize} isMobile={isMobile} />
-      </Canvas>
+      </Canvas> */}
+
+      <div
+        style={{ position: "relative", height: "300px" }}
+        className="hero-main-text"
+      >
+        <TextPressure
+          text="Souvenirs Events"
+          flex={true}
+          alpha={false}
+          stroke={false}
+          width={true}
+          weight={true}
+          italic={true}
+          textColor="#ffffff"
+          strokeColor="#ff0000"
+          minFontSize={200}
+        />
+      </div>
+      <div className="hero-main-text-mobile" style={{ position: "relative" }}>
+        <h1>Souvenirs Events</h1>
+      </div>
 
       <div className="hero-content">
         <p>Bringing your dream event to life.</p>

@@ -1,0 +1,34 @@
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: -3px;
+    /* left: 0; */
+    background-color: #595959;
+    transition: transform .2s ease-out;
+    /* margin-bottom: none; */
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+}
+
+.hover-underline-animation.center::after {
+    transform-origin: bottom center;
+}
+
+.hover-underline-animation.center:hover::after {
+    transform-origin: bottom center;
+}
+

@@ -1,4 +1,6 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
+import "../context/HoverUnderline.css";
+import "./Testimonials.css";
 
 const testimonials = [
   {
@@ -21,11 +23,19 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <Container className="py-5">
-      <h2 className="text-center mb-4">What Our Clients Say</h2>
+      <h2 className="text-center mb-4 hover-underline-animation center">
+        What Our Clients Say
+      </h2>
       <Row>
         {testimonials.map((testimonial, index) => (
           <Col md={4} key={index} className="mb-4">
-            <Card className="text-center">
+            <Card
+              className="text-center testimonial-card"
+              style={{
+                background: "#FBFFE4",
+                border: "none",
+              }}
+            >
               <Card.Img
                 variant="top"
                 src={testimonial.img}

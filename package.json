@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "frontend": "vite",
+    "backend": "cd backend && node server.js",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -16,19 +18,25 @@
     "aos": "^2.3.4",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.7",
     "framer-motion": "^12.4.7",
     "gl-matrix": "^3.4.3",
+    "math": "^0.0.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^18.3.1",
+    "react-google-translate": "^1.0.12",
     "react-router-dom": "^7.1.5",
-    "three": "^0.173.0"
+    "tailwindcss": "^4.0.9",
+    "three": "^0.173.0",
+    "twilio": "^5.4.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
     "eslint": "^9.19.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.0.0",

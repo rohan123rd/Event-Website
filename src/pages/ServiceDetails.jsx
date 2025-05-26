@@ -51,7 +51,7 @@ const ServiceDetails = () => {
         className="back-btn"
         onClick={() => navigate("/services")}
       >
-        ← Back to Services
+        ←
       </Button>
 
       <h2 className="text-center mb-4">{service.title}</h2>
@@ -63,7 +63,7 @@ const ServiceDetails = () => {
             className="img-fluid rounded shadow"
           />
         </Col>
-        <Col md={6}>
+        <Col md={6} className="left-section-service-details">
           <p>{service.fullDescription}</p>
           <Button
             variant="outline-danger"

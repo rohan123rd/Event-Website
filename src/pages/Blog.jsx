@@ -1,4 +1,5 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
+import "../context/HoverUnderline.css";
 
 const blogPosts = [
   {
@@ -22,7 +23,9 @@ const blogPosts = [
 const Blog = () => {
   return (
     <Container className="py-5">
-      <h2 className="text-center mb-4">Our Blog</h2>
+      <h2 className="text-center mb-4 hover-underline-animation center">
+        Our Blog
+      </h2>
       <Row>
         {blogPosts.map((post, index) => {
           <Col md={4} key={index} className="mb-4">
@@ -40,7 +43,8 @@ const Blog = () => {
         })}
       </Row>
     </Container>
-  );Reactcmd
+  );
+  Reactcmd;
 };
 
 export default Blog;

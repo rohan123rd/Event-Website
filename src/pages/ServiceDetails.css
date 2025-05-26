@@ -36,16 +36,18 @@
     color: white;
     border: none;
     font-size: 24px;
-    width: 40px;
+    width: 50px;
     height: 40px;
     text-align: center;
-    line-height: 40px;
+    /* line-height: 40px; */
     cursor: pointer;
     border-radius: 50%;
+    padding-bottom: 45px;
   }
   
   .left-btn {
     left: 10px;
+    /* padding-bottom: 10px; */
   }
   
   .right-btn {
@@ -69,9 +71,9 @@
   }
 
   .contact-btn {
-    position: absolute;
-    top: 400px;
-    left: 970px;
+    /* position: absolute; */
+    /* top: 400px; */
+    /* left: 970px; */
     padding: 20px 45px;
     font-size: 26px;
     transition: background 0.3s ease-in-out;
@@ -82,4 +84,13 @@
     color: white;
   }
   
-  
+  .left-section-service-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .left-section-service-details p {
+    text-align: justify;
+  }

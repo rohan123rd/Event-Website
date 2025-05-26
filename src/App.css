@@ -18,6 +18,23 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+
+/* :root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease-in-out;
+} */
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

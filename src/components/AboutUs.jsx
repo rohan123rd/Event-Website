@@ -1,18 +1,21 @@
 import { Container, Row, Col } from "react-bootstrap";
+import "../context/HoverUnderline.css";
 
 const AboutUs = () => {
   return (
     <Container className="py-5">
+      <h2 className="text-center mb-4 hover-underline-animation center">
+        About Us
+      </h2>
       <Row className="align-items-center">
         <Col md={6}>
           <img
-            src="https://www.eventbookings.com/wp-content/uploads/2018/03/event-ideas-for-party-eventbookings.jpg"
+            src="src\assets\02 black watermark.png"
             alt="About Us"
-            className="img-fluid rounded shadow"
+            className="img-fluid"
           />
         </Col>
         <Col md={6}>
-          <h2>About Us</h2>
           <p>
             Welcome to Souvenirs Events! We specialize in making your
             celebrations unforgettable with stunning decorations and seamless

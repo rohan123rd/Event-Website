@@ -1,59 +1,3 @@
-// import { Container, Row, Col, Modal } from "react-bootstrap";
-// import { useState } from "react";
-
-// const images = [
-//   "/assets/gallery1.jpg",
-//   "/assets/gallery2.jpg",
-//   "/assets/gallery3.jpg",
-//   "/assets/gallery4.jpg",
-//   "/assets/gallery5.jpg",
-//   "/assets/gallery6.jpg",
-// ];
-
-// const Gallery = () => {
-//   const [show, setShow] = useState(false);
-//   const [selectedImage, setSelectedImage] = useState(null);
-
-//   const handleShow = (image) => {
-//     setSelectedImage(image);
-//     setShow(true);
-//   };
-
-//   const handleClose = () => setShow(false);
-
-//   return (
-//     <Container className="py-5">
-//       <h2 className="text-center mb-4">Our Gallery</h2>
-//       <Row>
-//         {images.map((img, index) => (
-//           <Col md={4} key={index} className="mb-4">
-//             <img
-//               src={img}
-//               alt="Event"
-//               className="img-fluid rounded shadow"
-//               style={{ cursor: "pointer" }}
-//               onClick={() => handleShow(img)}
-//             />
-//           </Col>
-//         ))}
-//       </Row>
-
-//       {/* Modal for Image Preview */}
-//       <Modal show={show} onHide={handleClose} centered>
-//         <Modal.Body>
-//           {selectedImage && (
-//             <img
-//               src={selectedImage}
-//               alt="Selected"
-//               className="img-fluid w-100"
-//             />
-//           )}
-//         </Modal.Body>
-//       </Modal>
-//     </Container>
-//   );
-// };
-
 import Masonry from "./Masonry";
 
 const data = [
@@ -75,11 +19,18 @@ const data = [
   { id: 16, image: "src/assets/baby-shower2.jpeg", height: 550 },
   { id: 17, image: "src/assets/festival1.jpeg", height: 700 },
   { id: 18, image: "src/assets/haldi3.jpeg", height: 550 },
+  { id: 20, image: "src/assets/festival2.jpeg", height: 750 },
+  { id: 21, image: "src/assets/birthday5.jpeg", height: 850 },
+  { id: 22, image: "src/assets/baby-shower6.jpeg", height: 750 },
+  { id: 23, image: "src/assets/corporate2.jpeg", height: 550 },
+  { id: 19, image: "src/assets/corporate3.jpeg", height: 650 },
 ];
 
 const Gallery = () => {
   return (
-    <div style={{ height: "100%", position: "relative" }}>
+    <div
+      style={{ height: "100%", position: "relative", paddingBottom: "20px" }}
+    >
       <Masonry data={data} />
     </div>
   );
