@@ -8,6 +8,7 @@
     "frontend": "vite",
     "backend": "cd backend && node server.js",
     "build": "vite build",
+    "vercel-build": "npm install --legacy-peer-deps && npm run build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
