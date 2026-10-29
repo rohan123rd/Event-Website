@@ -7,12 +7,12 @@ const HomeGallery = () => {
   const navigate = useNavigate();
 
   const galleryImages = [
-    { id: 1, url: "src/assets/corporate3.jpeg" },
-    { id: 2, url: "src/assets/wedding1.jpeg" },
-    { id: 3, url: "src/assets/birthday3.jpeg" },
-    { id: 4, url: "src/assets/haldi4.jpeg" },
-    { id: 5, url: "src/assets/baby-shower2.jpeg" },
-    { id: 6, url: "src/assets/frame1.jpeg" },
+    { id: 1, url: "/assets/corporate3.jpeg" },
+    { id: 2, url: "/assets/wedding1.jpeg" },
+    { id: 3, url: "/assets/birthday3.jpeg" },
+    { id: 4, url: "/assets/haldi4.jpeg" },
+    { id: 5, url: "/assets/baby-shower2.jpeg" },
+    { id: 6, url: "/assets/frame1.jpeg" },
     // { id: 7, url: "src/assets/baby-shower3.jpeg" },
   ];
 

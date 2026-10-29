@@ -6,17 +6,17 @@ const testimonials = [
   {
     name: "Vansh Patel",
     text: "Souvenirs Events made my wedding day perfect! The decorations were beyond my expectations.",
-    img: "src/assets/profile-demo.webp",
+    img: "/assets/profile-demo.webp",
   },
   {
     name: "Nirish Tank",
     text: "Their team planned my corporate event flawlessly. Highly recommended!",
-    img: "src/assets/profile-demo.webp",
+    img: "/assets/profile-demo.webp",
   },
   {
     name: "Meet Dhameliya",
     text: "The birthday party decorations were amazing! My son loved every detail.",
-    img: "src/assets/profile-demo.webp",
+    img: "/assets/profile-demo.webp",
   },
 ];
 

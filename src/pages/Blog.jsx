@@ -4,7 +4,7 @@ import "../context/HoverUnderline.css";
 const blogPosts = [
   {
     title: "Top 10 Wedding Trends in 2024",
-    img: "src/assets/profile-demo.webp",
+    img: "/assets/profile-demo.webp",
     description: "Discover the latest wedding decoration trends for 2024...",
   },
   {

@@ -3,7 +3,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 const services = [
   {
     title: "Wedding Decorations",
-    img: "./assets/Gallery/wedding.jpg",
+    img: "/assets/Gallery/wedding.jpg",
     description: "Elegant and luxurious wedding setups designed to perfection.",
   },
   {

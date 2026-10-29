@@ -10,7 +10,7 @@ const AboutUs = () => {
       <Row className="align-items-center">
         <Col md={6}>
           <img
-            src="src\assets\02 black watermark.png"
+            src="\assets\black-watermark.png"
             alt="About Us"
             className="img-fluid"
           />

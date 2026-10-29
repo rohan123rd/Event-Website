@@ -7,7 +7,7 @@ import TextPressure from "../context/TextPressure";
 const Logo = ({ logoRef, size, isMobile }) => {
   const logoTexture = useLoader(
     TextureLoader,
-    "src/assets/02 black watermark.png"
+    "/assets/02 black watermark.png"
   );
 
   useFrame(() => {

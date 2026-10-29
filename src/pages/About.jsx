@@ -40,7 +40,7 @@ const About = () => {
           </Col>
           <Col md={6}>
             <img
-              src="src\assets\02 black watermark.png"
+              src="\assets\black-watermark.png"
               alt="About Us"
               className="img-fluid rounded"
             />
@@ -100,7 +100,7 @@ const About = () => {
           <Col className="mt-5 d-flex justify-content-around">
             <TiltedCard
               imageSrc="https://i.ibb.co/TsKnQzF/Untitled-design.png"
-              altText="Kendrick Lamar - GNX Album Cover"
+              altText="Rohan Naghera"
               captionText="Rohan Naghera"
               containerHeight="300px"
               containerWidth="300px"

@@ -20,7 +20,7 @@ const Header = () => {
         <Navbar.Brand as={Link} to="/">
           <img
             style={{ paddingRight: "10px" }}
-            src="src/assets/logo.png"
+            src="/assets/logo.png"
             // width="100px"
             height="50px"
             alt="Logo"
